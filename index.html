@@ -5,8 +5,10 @@
     <style>
       html {
         align-items: center;
+        color: #142e47;
         display: flex;
         flex-wrap: wrap;
+        font-family: 'Open Sans', sans-serif;
         height: 100%;
         justify-content: center;
         margin: 0;
@@ -18,10 +20,30 @@
         margin: 0;
         text-align: center;
       }
+      div {
+        display: flex;
+        flex-wrap: wrap;
+      }
       h1 {
-        font-family: 'Open Sans', sans-serif;
         font-size: 72px;
         margin: 0;
+        padding-bottom: 20px;
+      }
+      a {
+        border: 2px solid transparent;
+        color: #142e47;
+        flex: 1 1 auto;
+        padding: 0 10px;
+        text-decoration: none;
+      }
+      a:nth-child(even) {
+        background: #eee;
+      }
+      a h2 {
+        color: #0288c9;
+      }
+      a:hover {
+        border-color: #142e47;
       }
       span {
         display: block;
@@ -32,6 +54,15 @@
   </head>
   <body>
     <h1>dogma.io</h1>
-    <span>Coming soon…</span>
+    <div>
+      <a href="https://github.com/dogma-io/freezly">
+        <h2>freezly</h2>
+        <p>Small utility for deeply freezing objects in JavaScript.</p>
+      </a>
+      <a href="https://github.com/dogma-io/nodely">
+        <h2>nodely</h2>
+        <p>Write Node code using whatever syntax you want.</p>
+      </h2>
+    </div>
   </body>
 </html>
